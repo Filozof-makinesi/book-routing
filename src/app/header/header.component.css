@@ -1,0 +1,30 @@
+body {
+    padding: 0;
+    margin: 0;
+  }
+.header{
+    display: flex;
+    padding-left: 2%;
+    padding-top:1%;
+    text-align: center;
+    background:rgb(11, 26, 71);
+    color: white;
+    font-size: 30px;
+    box-shadow: 0px 2px 1px rgb(209, 231, 231);
+   
+    
+}
+.ekle{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content:flex-end ;
+    padding-left: 88%;
+    padding-top:1%;
+    align-items: center;
+    
+
+}
+.ekle >a{
+    text-decoration: none;
+    color: white;
+}

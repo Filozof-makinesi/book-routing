@@ -1,0 +1,34 @@
+
+<nav class="header">  
+    <div class="container">
+       
+     <img src="assets/yamak1.PNG" width="105" height="100"  >
+    </div>
+    
+</nav>
+<br><br>
+<div class="ekleme">
+  <form  [formGroup]="form" (ngSubmit)="onSubmit(form.value)" >
+    <label for="fname">Kitap  Adı:</label>
+    <input  id="fname" type="text" formControlName="fname"><br><br>
+    <label for="lname">KitapYazarı:</label>
+    <input id="lname"type="text"  formControlName="lname"><br><br>
+    <label for="fyıl">Basım Yılı:</label>
+    <input id="fyıl"type="text"  formControlName="fyıl"><br><br>
+    <label for="foto">Foto URL:</label>
+    <input id="foto" type="text" formControlName="foto"><br><br>
+    <label for="fyayn">Yayın Evi:</label>
+    <input id="fyayn"type="text"  formControlName="fyayn"><br><br>
+    <input type="submit" value="Kaydet" >
+  
+   
+   
+    
+  </form>
+ 
+</div>
+
+
+
+
+

@@ -1,0 +1,24 @@
+<app-header> </app-header>
+<br>
+<div class="yem-resim" >
+    <div *ngFor="let item of allBooks; let i = index" class="card" >
+    <div class="cardd">
+        <a [routerLink]="['/book-detail',item.id]"> <img class="boy" [src]="item.imageUrl" ></a>
+    </div>
+    <div class="cardd">
+        <a [routerLink]="['/book-detail',item.bookName]"> <p>Kitap adı: {{item.bookName}}</p></a>
+    </div>
+    <div class="cardd">
+        <a [routerLink]="['/book-detail',item.autor]"> <p>Kitap Yazarı: {{item.autor}} </p></a>
+    </div>
+    <div class="cardd">
+        <a [routerLink]="['/book-detail',item.year]">  <p>Basım Yılı: {{item.year}} </p></a>
+    </div>
+    <div class="cardd">
+        <a [routerLink]="['/book-detail',item.home]">  <p>Yayın Evi: {{item.home}} </p></a>
+    </div>
+</div>
+</div>
+    
+
+
